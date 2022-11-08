@@ -1,0 +1,54 @@
+.favList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.favList__item {
+    background-color: #d9d9d9;
+    min-width: 280px;
+    min-height: 311px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.favList__UpperInfo {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.favList__UpperInfo > div {
+    background-color: #868383;
+    width: 71.65px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.favList__UpperInfo > button {
+    background-color: #868383;
+    border: none;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.favList__img {
+    max-height: 80%;
+    border-radius: 20px;
+}
+.favList__Info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+.favList__Killer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}

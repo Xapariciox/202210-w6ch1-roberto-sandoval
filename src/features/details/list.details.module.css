@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    margin: 0;
+    padding: 2rem;
+}
+
+.container_title {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #c3d4fb;
+    border-bottom: solid rgba(0, 0, 0, 0.29);
+}
+
+.container_info {
+    border-bottom: solid rgba(0, 0, 0, 0.29);
+}
+
+.text {
+    color: #c3d4fb;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.text_info {
+    color: #c3d4fb;
+    font-weight: 400;
+}

@@ -1,0 +1,75 @@
+body {
+    background-color: #262d3b;
+    min-width: 390px;
+    min-height: 100vh;
+}
+.Logo-rick {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+img {
+    max-width: 19.5rem;
+}
+.ul-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.li-menu {
+    padding: 1rem;
+    border: solid;
+    color: transparent;
+    border-radius: 52px;
+    background-color: #265989;
+    min-width: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin: 0.5rem;
+    min-height: 4rem;
+    cursor: pointer;
+}
+.li-menu:hover {
+    background-color: royalblue;
+}
+.login-name {
+    color: white;
+}
+a {
+    color: white;
+    text-decoration: none;
+    min-height: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+.buttom-login,
+.button-logout {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    background-color: cornflowerblue;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button-logout:hover {
+    background-color: #265989;
+}
+.auth-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+.div-rick {
+    display: flex;
+    justify-content: center;
+    min-height: 21rem;
+}
