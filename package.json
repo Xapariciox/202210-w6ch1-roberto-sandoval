@@ -1,8 +1,18 @@
 {
-    "name": "week 6 redux",
+    "name": "week6.redux",
     "version": "0.1.0",
     "private": true,
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "test:all": "react-scripts test --watchAll --collect-coverage",
+        "test:prod": "react-scripts test --watchAll --collect-coverage --watchAll=false",
+        "eject": "react-scripts eject",
+        "lint": "eslint ."
+    },
     "dependencies": {
+        "@auth0/auth0-react": "^1.12.0",
         "@reduxjs/toolkit": "^1.9.0",
         "@testing-library/jest-dom": "^5.16.5",
         "@testing-library/react": "^13.4.0",
@@ -17,19 +27,12 @@
         "eslint-config-prettier": "^8.5.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
+        "react-redux": "^8.0.5",
         "react-router-dom": "^6.4.2",
         "react-scripts": "5.0.1",
         "redux": "^4.2.0",
         "typescript": "^4.8.4",
         "web-vitals": "^2.1.4"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "test:all": "react-scripts test --watchAll --collect-coverage",
-        "test:prod": "react-scripts test --watchAll --collect-coverage --watchAll = false",
-        "eject": "react-scripts eject"
     },
     "eslintConfig": {
         "extends": [
@@ -45,10 +48,19 @@
         },
         "plugins": [
             "@typescript-eslint"
-        ]
+        ],
+        "rules": {
+            "testing-library/no-render-in-setup": "off"
+        }
     },
     "prettier": {
         "singleQuote": true
+    },
+    "jest": {
+        "coveragePathIgnorePatterns": [
+            "<rootDir>/src/reportWebVitals.ts",
+            "<rootDir>/src/index.ts"
+        ]
     },
     "browserslist": {
         "production": [
@@ -61,8 +73,5 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    },
-    "devDependencies": {
-        "eclint": "^2.8.1"
     }
 }
